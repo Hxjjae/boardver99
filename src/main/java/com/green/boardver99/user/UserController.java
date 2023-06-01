@@ -1,6 +1,7 @@
 package com.green.boardver99.user;
 
 import com.green.boardver99.user.model.UserEntity;
+import com.green.boardver99.user.model.UserLoginDto;
 import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -26,5 +27,12 @@ public class UserController {
    public int postUser(@RequestBody UserEntity entity){
         return service.insUser(entity);
     }
+    @PostMapping("/login")
+    @Operation(summary = "로그인", description = "" +
+            "리턴값 : " +
+            "(1)로그인 성공, " +
+            "(2)아이디 없음, " +
+            "(3)비밀번호 다름")
+    public int postLoginUser(@RequestBody UserLoginDto dto){return service}
 
 }
