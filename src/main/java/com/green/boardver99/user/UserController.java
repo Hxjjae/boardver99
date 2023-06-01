@@ -33,6 +33,6 @@ public class UserController {
             "(1)로그인 성공, " +
             "(2)아이디 없음, " +
             "(3)비밀번호 다름")
-    public int postLoginUser(@RequestBody UserLoginDto dto){return service}
+    public int postLoginUser(@RequestBody UserLoginDto dto){return service.LoginUser(dto);}
 
 }
