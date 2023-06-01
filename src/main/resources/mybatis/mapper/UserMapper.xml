@@ -10,4 +10,10 @@
         values
         (#{uid},#{upw},#{nm},#{gender},#{addr})
     </insert>
+
+    <select id="LoginUser">
+        Select *
+        from t_user
+
+    </select>
 </mapper>
