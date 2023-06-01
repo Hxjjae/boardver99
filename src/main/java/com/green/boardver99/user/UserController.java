@@ -24,7 +24,7 @@ public class UserController {
             "gender: [1] 성별(M: 남성, F:여성),<br>"+
             "addr: [100] 대구시 달서구")
    public int postUser(@RequestBody UserEntity entity){
-        return service.
+        return service.insUser(entity);
     }
 
 }
