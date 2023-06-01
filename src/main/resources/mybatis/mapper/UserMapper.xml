@@ -10,4 +10,5 @@
         values
         (#{uid},#{upw},#{nm},#{gender},#{addr})
     </insert>
+   <select id=""
 </mapper>
